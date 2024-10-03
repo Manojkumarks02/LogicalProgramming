@@ -12,8 +12,8 @@ public class FindDuplicateArray {
     }
 
     private static Set<Integer> findDuplicates(int[] arr) {
-        Set<Integer> set = new HashSet<Integer>(); //to keep track of elements we've encountered
-        Set<Integer> set1 = new HashSet<Integer>(); //If an element is already in the set, it means it's a duplicate, so we add it to another set
+        Set<Integer> set = new HashSet<>(); //to keep track of elements we've encountered
+        Set<Integer> set1 = new HashSet<>(); //If an element is already in the set, it means it's a duplicate, so we add it to another set
 
         for(int num : arr){
             if( !set.add(num)){
