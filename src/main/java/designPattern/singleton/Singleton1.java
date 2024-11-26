@@ -27,5 +27,3 @@ public class Singleton1 {
             singleton.showMessage();
         }
     }
-
-
