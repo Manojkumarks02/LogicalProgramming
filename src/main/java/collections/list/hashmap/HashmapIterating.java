@@ -15,11 +15,19 @@ public class HashmapIterating {
         for (Map.Entry<Integer ,String> entry : map.entrySet()) {
             System.out.println("Key: " + entry.getKey() + ", Value: " + entry.getValue());
         }
+        System.out.println("----------------------------------------------------");
 
 //        for-each loop
         for(Integer key : map.keySet()){
             System.out.println("Key: " + key + ", Value: " + map.get(key));
         }
+        System.out.println("----------------------------------------------------");
+
+        //using java 8
+        System.out.println("----------------------------------------------------");
+        map.forEach((key,value) -> System.out.println(key + value));
+
+
 
 
     }
